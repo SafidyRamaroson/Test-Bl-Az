@@ -2,7 +2,7 @@ import { SaintRaphaelServices } from "../organims/SaintRaphaelServices";
 
 export function SaintRaphaelSection() {
     return (
-        <div className="bg-[url('/saintRaphaelbackground.png')] bg-cover bg-center py-12">
+        <section className="bg-[url('/saintRaphaelbackground.png')] bg-cover bg-center py-12">
             <h2 className="text-[43px] text-primary-foreground font-normal text-center">
                 Saint Raphaël, l’endroit parfait pour <br /> <span className="font-bold">vivre la Côte d’Azur</span>
             </h2>
@@ -12,6 +12,6 @@ export function SaintRaphaelSection() {
             </div>
 
             <p className="text-center text-primary-foreground text-sm py-10 font-normal">Flânez sur la Promenade des Bains, explorez les criques secrètes ou partez en mer depuis  son port de <br /> plaisance. Saint-Raphaël, c’est la Côte d’Azur dans toute sa splendeur !</p>
-        </div>
+        </section>
     );
 }
