@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { BluAzurContact } from "../organims/BluAzurContact";
 import { BluAzurLogo } from "../atoms/BluAzurLogo";
 import { FooterCopyRight } from "../atoms/FooterCopyright";
