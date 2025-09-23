@@ -1,16 +1,17 @@
 import { ReserveNowButton } from "../atoms/ReserveNowButton";
 import { ReserveNowHeader } from "../molecules/ReserveNowHeader";
 
-
 export function ReserveNowSection() {
     return (
-        <div className="relative bg-[url('/residence-pierre-vacances-la-corniche-d-or.png')] bg-contain py-12 min-h-screen flex flex-col items-center justify-center z-10">
-            {/* overlay */}
-            <div className="absolute inset-0 bg-linear-to-r from-primary to-primary/10 h-full w-full -z-10"></div>
+        <div className="relative bg-[url('/residence-pierre-vacances-la-corniche-d-or.png')] bg-cover bg-no-repeat bg-center py-12 min-h-screen flex flex-col items-center justify-center">
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary/10 z-0"></div>
 
             {/* Content */}
-            <ReserveNowHeader />
-            <ReserveNowButton />
+            <div className="relative z-10 flex flex-col items-center gap-6">
+                <ReserveNowHeader />
+                <ReserveNowButton />
+            </div>
         </div>
-    )
+    );
 }
