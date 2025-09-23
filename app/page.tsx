@@ -1,5 +1,5 @@
 import { BluAzurLocalisationSection } from "@/components/templates/BluAzurLocalisationSection";
-import { DestinationBlockSection } from "@/components/templates/destinationBlockSection";
+import { DestinationBlockSection } from "@/components/templates/DestinationBlockSection";
 import { ExploreBluAzurSection } from "@/components/templates/ExploreBluAzurSection";
 import { FooterSection } from "@/components/templates/FooterSection";
 import { ReserveNowSection } from "@/components/templates/ReserveNowSection";
