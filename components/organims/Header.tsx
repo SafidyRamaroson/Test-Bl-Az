@@ -27,7 +27,7 @@ export function Header() {
                         </Link>
                     </li>
                     <li>
-                        <Button className="rounded-full cursor-pointer opacity-100 text-primary-foreground/50">Réservé</Button>
+                        <Button className="rounded-full cursor-pointer opacity-100 text-primary-foreground">Réservé</Button>
                     </li>
                 </ul>
             </div>
