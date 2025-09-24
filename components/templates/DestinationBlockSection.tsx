@@ -12,6 +12,7 @@ export function DestinationBlockSection() {
                         alt='destination grouped image'
                         width={904}
                         height={1148}
+                        sizes="(max-width: 768px) 100vw, 389px"
                         className="w-[389px] h-[494px]"
                     />
                 </div>
