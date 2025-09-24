@@ -40,7 +40,7 @@ export const activities: Activity[] = [
         className: "col-span-2 row-span-5 row-start-4",
     },
     {
-        backgroundCardImage: "/port-grimaud-cite-lacustre.png",
+        backgroundCardImage: "/port-grimaud-cite-lacustre.avif",
         name: "Des expériences inoubliables en famille",
         description:
             "Entre villages pittoresques, marchés publics animés et escapades sur la route du littoral, Saint-Raphaël propose un cadre idéal pour partager des moments inoubliables. La diversité des activités en plein air fait de la région une destination prisée par les amateurs de découvertes et d’aventures en famille.",

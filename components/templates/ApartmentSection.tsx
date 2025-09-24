@@ -43,7 +43,7 @@ export function ApartmemtSection() {
                     {/* Deuxième image */}
                     <div className=" relative w-[250px] h-[431px] overflow-hidden  rounded-tl-2xl rounded-bl-2xl">
                         <Image
-                            src="/kitchen-room.png"
+                            src="/kitchen-room.webp"
                             alt="residence"
                             width={300}
                             height={1001}

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function HeroSection() {
     return (
-        <div className="relative bg-[url('/hero-image.jpg')] bg-cover bg-no-repeat bg-center min-h-screen object-cover">
+        <div className="relative bg-[url('/hero-image.avif')] bg-cover bg-no-repeat bg-center min-h-screen object-cover">
             {/* Overlay */}
             <div className="absolute inset-0 bg-linear-to-r from-black/70 to-black/5 z-0"></div>
             <Header />

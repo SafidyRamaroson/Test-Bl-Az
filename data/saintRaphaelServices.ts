@@ -12,7 +12,7 @@ export const saintRaphaelServices = [
         name: 'Randonnées et vélo dans l’Estérel'
     },
     {
-        src: '/casino.png',
+        src: '/casino.avif',
         alt: 'casino-Saint-Raphael',
         name: 'Casino et vie nocturne animée'
     },
@@ -22,7 +22,7 @@ export const saintRaphaelServices = [
         name: 'Villages perchés et  marchés provençaux'
     },
     {
-        src: '/golf.png',
+        src: '/golf.avif',
         alt: 'golf-Saint-Raphael',
         name: 'Un paradis pour les golfeurs'
     },
