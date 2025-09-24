@@ -7,8 +7,8 @@ export function MapImage() {
             <Image
                 src="/blu-azur-map.png"
                 alt="Blu Azur map"
-                width={1026}
-                height={1225}
+                width={875}
+                height={717}
                 className="w-[441px] h-[526px] rounded-4xl"
             />
             <Image
