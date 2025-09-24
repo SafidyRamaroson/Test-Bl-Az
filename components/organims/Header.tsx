@@ -1,16 +1,24 @@
+'use client'
+
 import Link from "next/link";
 import { BluAzurLogo } from "../atoms/BluAzurLogo";
 import { Button } from "../ui/button";
+import { MenuDrawer } from "./MobileMenu";
+import { useScrolled } from "@/hooks/useScrolled";
+import { cn } from "@/lib/utils";
+import { useMobile } from "@/hooks/useMobile";
 
 export function Header() {
+    const scrolled = useScrolled();
+    const isMobile = useMobile();
     return (
-        <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-xs">
-            <div className="w-3/4 mx-auto border-b border-white flex flex-row justify-between items-center py-2">
+        <header className={cn("fixed top-0 left-0 w-full z-50 backdrop-blur-xs", scrolled && 'backdrop-blur-md bg-black/20')}>
+            <div className={cn("w-3/4 mx-auto border-b border-white flex flex-row justify-between items-center py-2", isMobile && "w-4/5")}>
                 {/* Logo */}
                 <BluAzurLogo className="w-[109px] h-[48px]" />
 
                 {/* Menu */}
-                <ul className="text-primary-foreground flex flex-row items-center space-x-8">
+                {isMobile ? <MenuDrawer /> : (<ul className="text-primary-foreground flex flex-row items-center space-x-8">
                     <li>
                         <Link href="/" className="font-bold hover:text-primary-foreground">
                             Accueil
@@ -27,9 +35,11 @@ export function Header() {
                         </Link>
                     </li>
                     <li>
-                        <Button className="rounded-full cursor-pointer opacity-100 text-primary-foreground">Réservé</Button>
+                        <Button className="rounded-full cursor-pointer opacity-100 text-primary-foreground">
+                            Réserver
+                        </Button>
                     </li>
-                </ul>
+                </ul>)}
             </div>
         </header>
     );
