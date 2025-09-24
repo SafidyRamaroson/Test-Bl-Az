@@ -9,7 +9,7 @@ export function ReserveNowButton({
 }: { className?: string }) {
     return (
         <Link href='#' className={cn("cursor-pointer z-10", className)}>
-            <Button size="lg" className="rounded-full py-4 px-2 text-[16px] font-[900]">
+            <Button size="lg" className="rounded-full text-white cursor-pointer py-4 px-2 text-[16px] font-[900]">
                 Réservez dès maintenant votre séjour !
                 <CircleArrowRight className="text-primary-foreground size-4 ml-2" />
             </Button>
