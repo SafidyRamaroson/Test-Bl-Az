@@ -1,3 +1,4 @@
+import { ApartmemtSection } from "@/components/templates/ApartmentSection";
 import { BluAzurLocalisationSection } from "@/components/templates/BluAzurLocalisationSection";
 import { DestinationBlockSection } from "@/components/templates/DestinationBlockSection";
 import { ExploreBluAzurSection } from "@/components/templates/ExploreBluAzurSection";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
+      <ApartmemtSection />
       <SaintRaphaelSection />
       <BluAzurLocalisationSection />
       <DestinationBlockSection />
