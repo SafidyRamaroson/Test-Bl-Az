@@ -39,12 +39,15 @@ export function HeroSection() {
 
             {/* Hero text */}
             <div className="relative w-11/12 lg:w-3/4 min-h-screen mx-auto flex flex-col justify-center items-start z-10">
-                <h1 className="font-bold text-[48px] text-primary-foreground mt-4 md:mt-32 lg:mt-36 xl:mt-44">Votre évasion <span className="font-normal"> <br /> sur la Côte d’Azur !</span></h1>
+                <h1 className="font-bold text-[28px] lg:text-[48px] text-primary-foreground mt-4 md:mt-32 lg:mt-36 xl:mt-44">Votre évasion <span className="font-normal"> <br /> sur la Côte d’Azur !</span></h1>
                 <p className="text-sm text-justify text-primary-foreground">Blu Azur vous invite à découvrir le charme de Saint-Raphaël, une <br /> destination d’exception nichée entre Cannes et Saint-Tropez. <br /> Nos appartements tout équipés, situés dans un domaine privé <br /> sécurisé, offrent un cadre verdoyant et paisible, à quelques pas <br /> de la marina de Santa Lucia, des plages de sable fin et du <br /> centre-ville animé. Profitez d’un séjour alliant confort, sérénité et <br /> élégance au cœur de la Riviera française !</p>
                 <Button className="px-8 py-5 rounded-full mt-16 bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary cursor-pointer">
-                    Réservez dès maintenant votre séjour
+                    <span className="whitespace-normal break-words flex-1 text-center">
+                        Réservez dès maintenant votre séjour !
+                    </span>
                     <CircleArrowRight className="text-primary-foreground size-4 ml-2" />
                 </Button>
+
             </div>
 
             {/* Animated hero images */}

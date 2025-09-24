@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function MapImage() {
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-12 md:mt-0">
             <div className="relative w-[441px] h-[441px] md:h-[526px]">
                 <Image
                     src="/blu-azur-map.avif"
