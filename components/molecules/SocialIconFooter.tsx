@@ -19,9 +19,9 @@ export function SocialIconFooter({
     return (
         <span className={cn('text-base flex flex-row items-center gap-4', className)}>
             <span className="border border-white rounded-full p-1 bg-primary-foreground">
-                <Icon className="size-5 text-primary" />
+                <Icon className="size-5 text-primary" aria-hidden="true" />
             </span>
-            <Link href={href} target={target} className="text-[18px]">
+            <Link href={href} target={target} className="text-[18px]" aria-label={label}>
                 {label}
             </Link>
         </span>
