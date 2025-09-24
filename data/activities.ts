@@ -18,7 +18,7 @@ export const activities: Activity[] = [
         toSeeTextLink:
             "Le Festival de Cannes, Carnaval de Nice, Fête du Citron",
         toSeeLink: "#",
-        className: "col-span-3 row-span-3 h-[280px]",
+        className: "xl:col-span-3 xl:row-span-3 xl:h-[280px] max-xl:h-[335px]",
     },
     {
         backgroundCardImage: "/sport-mediterranee.avif",
@@ -28,7 +28,7 @@ export const activities: Activity[] = [
         toSeeTextLink:
             "Grand prix de Monaco, Ironman France - Nice, Marathon des Alpes-Maritimes, Régates de Saint-Tropez",
         toSeeLink: "#",
-        className: "col-span-3 row-span-3 col-start-4 h-[280px]",
+        className: "xl:col-span-3 xl:row-span-3 xl:col-start-4  xl:h-[280px] max-xl:h-[335px]",
     },
     {
         backgroundCardImage: "/destination-gourmande-et-authentique.avif",
@@ -37,14 +37,14 @@ export const activities: Activity[] = [
             "Les marchés provençaux dévoilent des saveurs du terroir, entre fromages affinés, huile d’olive et spécialités méditerranéennes. Vignerons passionnés et restaurants raffinés offrent une expérience gastronomique où tradition et créativité se rencontrent dans un cadre enchanteur.",
         buttonText: "Consulter la liste des meilleurs restaurants",
         buttonLink: "#",
-        className: "col-span-2 row-span-5 row-start-4",
+        className: "xl:col-span-2 xl:row-span-5 xl:row-start-4 max-xl:h-[335px]",
     },
     {
         backgroundCardImage: "/port-grimaud-cite-lacustre.avif",
         name: "Des expériences inoubliables en famille",
         description:
             "Entre villages pittoresques, marchés publics animés et escapades sur la route du littoral, Saint-Raphaël propose un cadre idéal pour partager des moments inoubliables. La diversité des activités en plein air fait de la région une destination prisée par les amateurs de découvertes et d’aventures en famille.",
-        className: "col-span-2 row-span-5 col-start-3 row-start-4",
+        className: "xl:col-span-2 xl:row-span-5 xl:col-start-3 xl:row-start-4 max-xl:h-[335px]",
     },
     {
         backgroundCardImage: "/cap-dramont.webp",
@@ -55,6 +55,6 @@ export const activities: Activity[] = [
         toSeeLink: "#",
         buttonText: "Consulter la liste des sentiers pédestres",
         buttonLink: "#",
-        className: "col-span-2 row-span-5 col-start-5 row-start-4",
+        className: "xl:col-span-2 xl:row-span-5 xl:col-start-5 xl:row-start-4 max-xl:h-[335px]",
     },
 ];

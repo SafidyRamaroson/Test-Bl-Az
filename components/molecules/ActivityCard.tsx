@@ -26,7 +26,7 @@ export function ActivityCard({
     return (
         <div
             style={{ backgroundImage: `url(${backgroundCardImage})` }}
-            className={`px-[54px] py-[36px] rounded-[36px] overflow-hidden bg-cover bg-center text-primary-foreground flex flex-col justify-end ${className ?? ""}`}
+            className={`px-4 lg:px-[36px] py-[24px] sm:py-[36px] rounded-[36px] overflow-hidden bg-cover bg-center text-primary-foreground flex flex-col justify-end ${className ?? ""}`}
         >
             {/* card header */}
             <div>
@@ -46,7 +46,7 @@ export function ActivityCard({
 
             {buttonText && (
                 <Link href={buttonLink ?? "#"} className="mt-[26px] inline-block">
-                    <Button className="bg-transparent border border-primary py-2 px-4 rounded-2xl text-[10px] font-bold">
+                    <Button className="bg-transparent border border-primary py-2 px-4 rounded-2xl text-[10px] font-bold text-wrap">
                         {buttonText}
                         <CircleArrowRight className="text-primary size-4 ml-2" />
                     </Button>
