@@ -17,7 +17,7 @@ export const saintRaphaelServices = [
         name: 'Casino et vie nocturne animée'
     },
     {
-        src: '/village.png',
+        src: '/village.avif',
         alt: 'village-Saint-Raphael',
         name: 'Villages perchés et  marchés provençaux'
     },

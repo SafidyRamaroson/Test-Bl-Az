@@ -11,7 +11,7 @@ type Activity = {
 
 export const activities: Activity[] = [
     {
-        backgroundCardImage: "/saint-pool-de-vence.png",
+        backgroundCardImage: "/saint-pool-de-vence.avif",
         name: "Un patrimoine culturel d’exception",
         description:
             "De Picasso à Cocteau, la Côte d’Azur a toujours été une terre d’inspiration pour les artistes. Musées, galeries et sites historiques jalonnent la région, offrant un voyage au cœur de l’art et de l’histoire entre Saint-Raphaël, Antibes et Saint-Paul-de-Vence.",
@@ -21,7 +21,7 @@ export const activities: Activity[] = [
         className: "col-span-3 row-span-3 h-[280px]",
     },
     {
-        backgroundCardImage: "/sport-mediterranee.png",
+        backgroundCardImage: "/sport-mediterranee.avif",
         name: "Le sport au rythme de la Méditerranée",
         description:
             "Du légendaire Grand Prix de Monaco aux défis de l’Ironman, en passant par le Marathon des Alpes-Maritimes, la région vibre au rythme des grands événements sportifs. Cyclisme sur la Route des Crêtes, golf sur des parcours prestigieux et voile lors des Régates de Saint-Tropez complètent ce décor idéal pour les amateurs de sport et d’adrénaline.",
