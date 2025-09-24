@@ -31,7 +31,7 @@ export const activities: Activity[] = [
         className: "col-span-3 row-span-3 col-start-4 h-[280px]",
     },
     {
-        backgroundCardImage: "/destination-gourmande.png",
+        backgroundCardImage: "/destination-gourmande-et-authentique.avif",
         name: "Une destination gourmande et authentique",
         description:
             "Les marchés provençaux dévoilent des saveurs du terroir, entre fromages affinés, huile d’olive et spécialités méditerranéennes. Vignerons passionnés et restaurants raffinés offrent une expérience gastronomique où tradition et créativité se rencontrent dans un cadre enchanteur.",
