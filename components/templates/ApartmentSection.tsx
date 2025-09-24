@@ -33,7 +33,7 @@ export function ApartmemtSection() {
                 <div className="absolute right-0 flex items-center gap-[10px] overflow-hidden rounded-2xl">
                     {/* Première image */}
                     <Image
-                        src="/apartment.png"
+                        src="/apartment.webp"
                         alt="residence"
                         width={421}
                         height={538}

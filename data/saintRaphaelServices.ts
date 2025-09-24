@@ -7,7 +7,7 @@ export const saintRaphaelServices = [
         name: 'Sports nautiques,  plongée, voile'
     },
     {
-        src: '/city.png',
+        src: '/city.avif',
         alt: 'city-Saint-Raphael',
         name: 'Randonnées et vélo dans l’Estérel'
     },

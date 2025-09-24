@@ -6,7 +6,7 @@ export function MapImage() {
         <div className="relative flex justify-center">
             <div className="relative w-[441px] h-[526px]">
                 <Image
-                    src="/blu-azur-map.png"
+                    src="/blu-azur-map.avif"
                     alt="Blu Azur map"
                     fill
                     className="object-cover rounded-4xl"

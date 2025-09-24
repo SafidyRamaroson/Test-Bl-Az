@@ -8,7 +8,7 @@ export function DestinationBlockSection() {
                 {/* Destination image grouped */}
                 <div>
                     <Image
-                        src='/destination-grouped-image.png'
+                        src='/destination-grouped-image.webp'
                         alt='destination grouped image'
                         width={904}
                         height={1148}

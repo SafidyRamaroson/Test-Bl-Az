@@ -5,7 +5,7 @@ import { MapImage } from "../molecules/MapImage";
 
 export function BluAzurLocalisationSection() {
     return (
-        <div className="bg-[url('/blu-azur-localisation-background.png')] min-h-screen bg-cover bg-center py-24">
+        <div className="bg-[url('/blu-azur-localisation-background.webp')] min-h-screen bg-cover bg-center py-24">
             {/* wrapper */}
             <div className="w-3/4 mx-auto grid grid-cols-2 gap-[234px] justify-center items-center">
                 {/* Blu azur localisation */}

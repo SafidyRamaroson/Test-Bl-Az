@@ -4,7 +4,7 @@ import Image from "next/image"
 export function BluAzurLogo({ className }: { className?: string }) {
     return (
         <Image
-            src="/blu-azur-logo.png"
+            src="/blu-azur-logo.avif"
             alt="Blu azur logo"
             width={279}
             height={123}

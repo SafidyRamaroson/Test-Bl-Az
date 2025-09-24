@@ -47,7 +47,7 @@ export const activities: Activity[] = [
         className: "col-span-2 row-span-5 col-start-3 row-start-4",
     },
     {
-        backgroundCardImage: "/cap-dramont.png",
+        backgroundCardImage: "/cap-dramont.webp",
         name: "L’évasion en pleine nature",
         description:
             "Le Massif de l’Estérel déploie ses roches rouges entre ciel et mer, offrant des panoramas spectaculaires. Randonnées, balades côtières et sentiers sauvages permettent de s’imprégner d’un environnement préservé, idéal pour une parenthèse hors du temps.",
