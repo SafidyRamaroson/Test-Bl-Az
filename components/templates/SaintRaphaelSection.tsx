@@ -2,7 +2,7 @@ import { SaintRaphaelServices } from "../organims/SaintRaphaelServices";
 
 export function SaintRaphaelSection() {
     return (
-        <section className="bg-[url('/saintRaphaelbackground.png')] bg-cover bg-center py-12">
+        <section className="bg-[url('/saintRaphaelbackground.avif')] bg-cover bg-center py-12">
             <h2 className="text-[43px] text-primary-foreground font-normal text-center">
                 Saint Raphaël, l’endroit parfait pour <br /> <span className="font-bold">vivre la Côte d’Azur</span>
             </h2>
