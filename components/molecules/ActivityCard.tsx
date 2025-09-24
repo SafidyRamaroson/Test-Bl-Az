@@ -31,12 +31,12 @@ export function ActivityCard({
             {/* card header */}
             <div>
                 <h3 className="text-[16px] font-bold">{name}</h3>
-                <p className="text-[11px] text-justify">{description}</p>
+                <p className="text-xs font-normal text-justify">{description}</p>
             </div>
 
             {/* card call to action */}
             {toSeeTextLink && (
-                <p className="flex flex-row gap-x-4 items-center font-normal text-[11px] mt-[6px]">
+                <p className="flex flex-row gap-x-4 items-center font-normal text-xs mt-[6px]">
                     A voir :
                     <Link href={toSeeLink ?? "#"} className="text-primary underline">
                         {toSeeTextLink}
