@@ -8,7 +8,7 @@ export function ReserveNowSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/5 z-0"></div>
 
             {/* Content */}
-            <div className="relative w-11/12 lg:w-3/4 z-10 flex flex-col items-center gap-6">
+            <div className="relative wrapper z-10 flex flex-col items-center gap-6">
                 <ReserveNowHeader />
                 <ReserveNowButton />
             </div>
