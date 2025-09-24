@@ -48,7 +48,7 @@ export function HeroSection() {
             </div>
 
             {/* Animated hero images */}
-            <div className="absolute bottom-10 right-10 z-10 flex gap-4">
+            {/* <div className="absolute bottom-10 right-10 z-10 flex gap-4">
                 <Image
                     src="/residence-pierre-vacances-la-corniche-d-or.avif"
                     alt="residence-pierre-vacances-la-corniche-d-or"
@@ -63,7 +63,7 @@ export function HeroSection() {
                     height={468}
                     className="w-[300px] h-[201px] rounded-2xl shadow-lg"
                 />
-            </div>
+            </div> */}
         </div>
     )
 }
