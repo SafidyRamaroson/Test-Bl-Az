@@ -8,7 +8,7 @@ export function ApartmemtSection() {
             {/* wrapper */}
             <div className="ml-[30px] md:ml-[90px] lg:ml-[188px] flex flex-col lg:flex-row max-lg:gap-y-10 items-center justify-between">
                 {/* description */}
-                <div className="max-w-full lg:max-w-[555px] text-center lg:text-left">
+                <div className="max-w-full lg:max-w-[555px] text-justify lg:text-left">
                     <h2 className="font-normal text-[#121212] text-[43px]">Le confort et la sérénité d’un <br /> <span className="font-bold">appartement privé</span></h2>
                     <p className="text-[##020202] text-sm my-4 font-normal">
                         Blu Azur vous propose des appartements élégants et spacieux, conçus pour accueillir de 2 à 6 personnes. Offrant un cadre confortable et moderne, ils sont parfaits pour une escapade détente ou un séjour prolongé.
