@@ -40,14 +40,14 @@ export function HeroSection() {
             {/* Animated hero images */}
             <div className="absolute bottom-10 right-10 z-10 flex gap-4">
                 <Image
-                    src="/residence-pierre-vacances-la-corniche-d-or.avis"
+                    src="/residence-pierre-vacances-la-corniche-d-or.avif"
                     alt="residence-pierre-vacances-la-corniche-d-or"
                     width={698}
                     height={468}
                     className="w-[300px] h-[201px] rounded-2xl shadow-lg"
                 />
                 <Image
-                    src="/residence-pierre-vacances-la-corniche-d-or.avis"
+                    src="/residence-pierre-vacances-la-corniche-d-or.avif"
                     alt="residence-pierre-vacances-la-corniche-d-or"
                     width={698}
                     height={468}
