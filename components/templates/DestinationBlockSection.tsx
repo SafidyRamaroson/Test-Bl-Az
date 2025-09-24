@@ -3,7 +3,7 @@ import Image from "next/image";
 export function DestinationBlockSection() {
     return (
         <div className="bg-[url('/pic-de-lourse-background.avif')] bg-cover bg-no-repeat bg-center min-h-screen">
-            <div className="w-11/12 sm:w-3/4 mx-auto z-10 py-16 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0">
+            <div className="w-11/12 lg:w-3/4 mx-auto z-10 py-16 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0">
 
                 {/* Destination image grouped */}
                 <div className="flex-shrink-0">
