@@ -11,18 +11,26 @@ export function Header() {
 
                 {/* Menu */}
                 <ul className="text-primary-foreground flex flex-row items-center space-x-8">
-                    <Link href="/" className="font-bold hover:text-primary-foreground">
-                        <li>Accueil</li>
-                    </Link>
-                    <Link href="/" className="font-bold hover:text-primary-foreground">
-                        <li>Localisation</li>
-                    </Link>
-                    <Link href="/" className="font-bold hover:text-primary-foreground">
-                        <li>Activités</li>
-                    </Link>
-                    <li>
-                        <Button className="rounded-full">Réservé</Button>
-                    </li>
+                    <ul className="text-primary-foreground flex flex-row items-center space-x-8">
+                        <li>
+                            <Link href="/" className="font-bold hover:text-primary-foreground">
+                                Accueil
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/" className="font-bold hover:text-primary-foreground">
+                                Localisation
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/" className="font-bold hover:text-primary-foreground">
+                                Activités
+                            </Link>
+                        </li>
+                        <li>
+                            <Button className="rounded-full">Réservé</Button>
+                        </li>
+                    </ul>
                 </ul>
             </div>
         </header>
