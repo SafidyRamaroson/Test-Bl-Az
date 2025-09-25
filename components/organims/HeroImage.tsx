@@ -15,9 +15,7 @@ export function HeroImage({ image, nextImage, isTransitioning, onNext, showSecon
     const isMobile = useMobile();
     return (
         <div
-            className="relative gap-4 md:absolute md:bottom-10 md:-right-16 md:flex md:flex-row-reverse z-10 md:gap-4 overflow-hidden"
-            onMouseEnter={() => { }}
-            onMouseLeave={() => { }}
+            className="relative gap-4 md:absolute md:bottom-10 md:-right-16 md:flex md:flex-row z-10 md:gap-4 overflow-hidden"
         >
             {/* Image principale */}
             <div className={`
@@ -49,7 +47,7 @@ export function HeroImage({ image, nextImage, isTransitioning, onNext, showSecon
                             className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-110 md:block hidden"
                         />
                         <div className={`absolute inset-0 z-0 transition-all duration-500
-              ${isTransitioning ? "bg-gradient-to-l from-black/30 to-black/50" : "bg-gradient-to-l from-black/10 to-black/30"}`}
+              ${isTransitioning ? "bg-gradient-to-l from-black/30 to-black/50" : "bg-gradient-to-l from-black/30 to-black/70"}`}
                         />
                         <ArrowButton onClick={onNext} isTransitioning={isTransitioning} />
                     </div>

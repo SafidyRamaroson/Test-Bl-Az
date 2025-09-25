@@ -7,14 +7,18 @@ import { useCarousel } from "@/hooks/useCarousel";
 import { HeroText } from "../molecules/HeroText";
 import { HeroImage } from "../organims/HeroImage";
 
-const images = [
-    { src: "/residence-pierre-vacances-la-corniche-d-or.avif", alt: "residence" },
-    { src: "/TensorPix-Chambre.webp", alt: "chambre" },
-    { src: "/TensorPix-Cuisine.webp", alt: "cuisine" },
+const heroImages = [
+    { src: "/TensorPix-Piscine.webp", alt: "TensorPix-Piscine" },
+    { src: "/TensorPix-Piscine2.webp", alt: "TensorPix-Piscine2" },
+    { src: "/TensorPix-Piscine3.webp", alt: "TensorPix-Piscine3" },
+    { src: "/TensorPix-Piscine-4-1.webp", alt: "TensorPix-Piscine-4-1" },
+    { src: "/TensorPix-Piscine-5.webp", alt: "TensorPix-Piscine-5" },
+    { src: "/TensorPix-Jardins.webp", alt: "TensorPix-Jardins" },
+    { src: "/TensorPix-residence-pierre-vacances-la-corniche-d-or.webp", alt: "TensorPix-residence-pierre-vacances-la-corniche-d-or" },
 ];
 
 export function HeroSection() {
-    const { currentItem, nextItem, isTransitioning, next } = useCarousel(images);
+    const { currentItem, nextItem, isTransitioning, next } = useCarousel(heroImages);
     return (
         <div className="relative min-h-screen overflow-hidden">
             {/* Background */}
