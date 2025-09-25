@@ -8,8 +8,8 @@ const bluAzurContacts = [
     },
     {
         icon: Phone,
-        href: "tel:+15555555555",
-        label: "+1 555 555-5555"
+        href: "tel:+1 (418) 569-7879",
+        label: "+1 (418) 569-7879"
     },
     {
         icon: Facebook,
