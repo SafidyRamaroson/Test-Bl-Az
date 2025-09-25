@@ -64,7 +64,7 @@ export function ApartmemtSection() {
     }, [isPaused, isTransitioning]);
 
     return (
-        <div className="relative bg-white py-12 min-h-screen flex items-center">
+        <section id="apartments" className="relative bg-white py-12 min-h-screen flex items-center">
             {/* wrapper */}
             <div className="ml-[15px] md:ml-[90px] lg:ml-[188px] flex flex-col lg:flex-row max-lg:gap-y-10 items-center justify-between">
                 {/* description */}
@@ -176,6 +176,6 @@ export function ApartmemtSection() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

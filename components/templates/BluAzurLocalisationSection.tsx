@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function BluAzurLocalisationSection() {
     return (
-        <div className="bg-[url('/blu-azur-localisation-background.webp')] min-h-screen bg-cover bg-center py-8  md:py-12 lg:py-24">
+        <section id="localisation" className="bg-[url('/blu-azur-localisation-background.webp')] min-h-screen bg-cover bg-center py-8  md:py-12 lg:py-24">
             {/* wrapper */}
             <div className="w-11/12 lg:w-3/4 mx-auto grid grid-cols-1 gap-x-[20px] md:grid-cols-2 md:gap-[80px] xl:gap-[234px] justify-center items-center">
                 {/* Blu azur localisation */}
@@ -27,6 +27,6 @@ export function BluAzurLocalisationSection() {
                 {/* Blu azur map */}
                 <MapImage />
             </div>
-        </div>
+        </section>
     )
 }

@@ -15,24 +15,26 @@ export function NavMenu({ className }: NavMenuProps) {
             )}
         >
             <li>
-                <Link href="/" className="font-bold hover:text-primary-foreground">
+                <Link href="#apartments" className="font-bold hover:text-primary-foreground">
                     Accueil
                 </Link>
             </li>
             <li>
-                <Link href="/" className="font-bold hover:text-primary-foreground">
+                <Link href="#localisation" className="font-bold hover:text-primary-foreground">
                     Localisation
                 </Link>
             </li>
             <li>
-                <Link href="/" className="font-bold hover:text-primary-foreground">
+                <Link href="#activities" className="font-bold hover:text-primary-foreground">
                     Activités
                 </Link>
             </li>
             <li>
-                <Button className="rounded-full cursor-pointer opacity-100 text-primary-foreground">
-                    Réserver
-                </Button>
+                <Link href="#reserve" className="font-bold hover:text-primary-foreground">
+                    <Button className="rounded-full cursor-pointer opacity-100 text-primary-foreground">
+                        Réserver
+                    </Button>
+                </Link>
             </li>
         </ul>
     );

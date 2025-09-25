@@ -41,7 +41,7 @@ export function MenuDrawer() {
                         <ul className="flex flex-col gap-4 text-left">
                             <li className="w-full">
                                 <Link
-                                    href="/"
+                                    href="#apartments"
                                     className="flex items-center gap-2 w-full p-2 font-bold hover:text-primary transition-colors"
                                 >
                                     <Home className="w-5 h-5 text-gray-700" />
@@ -51,7 +51,7 @@ export function MenuDrawer() {
 
                             <li className="w-full">
                                 <Link
-                                    href="/"
+                                    href="#localisation"
                                     className="flex items-center gap-2 w-full p-2 font-bold hover:text-primary transition-colors"
                                 >
                                     <MapPin className="w-5 h-5 text-gray-700" />
@@ -61,7 +61,7 @@ export function MenuDrawer() {
 
                             <li className="w-full">
                                 <Link
-                                    href="/"
+                                    href="#activities"
                                     className="flex items-center gap-2 w-full p-2 font-bold hover:text-primary transition-colors"
                                 >
                                     <Activity className="w-5 h-5 text-gray-700" />
@@ -69,10 +69,13 @@ export function MenuDrawer() {
                                 </Link>
                             </li>
                         </ul>
-
-                        <Button variant="secondary" className="w-full rounded-full p-2">
-                            Réservé
-                        </Button>
+                        <Link
+                            href="#reserve"
+                        >
+                            <Button variant="secondary" className="w-full rounded-full p-2">
+                                Réservé
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </DrawerContent>
