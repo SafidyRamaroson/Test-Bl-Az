@@ -14,6 +14,7 @@ export function ArrowButton({ onClick, isTransitioning = false, className }: Arr
         <button
             onClick={onClick}
             disabled={isTransitioning}
+            aria-label="Suivant"
             className={`absolute top-1/2 right-2 -translate-y-1/2 z-10
         border-2 border-primary-foreground backdrop-blur-sm p-1 rounded-full shadow-lg
         transition-all duration-300 ease-out
