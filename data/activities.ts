@@ -18,13 +18,13 @@ export const activities: Activity[] = [
         toSeeTextLink:
             "Le Festival de Cannes, Carnaval de Nice, Fête du Citron",
         toSeeLink: "#",
-        className: "xl:col-span-3 xl:row-span-3 xl:h-[280px] max-xl:h-[335px]",
+        className: "xl:col-span-3 xl:row-span-3 xl:h-[280px] max-xl:h-[335px] md:py-[82px] lg:py-[65px]",
     },
     {
         backgroundCardImage: "/sport-mediterranee.avif",
         name: "Le sport au rythme de la Méditerranée",
         description:
-            "Du légendaire Grand Prix de Monaco aux défis de l’Ironman, en passant par le Marathon des Alpes-Maritimes, la région vibre au rythme des grands événements sportifs. Cyclisme sur la Route des Crêtes, golf sur des parcours prestigieux et voile lors des Régates de Saint-Tropez complètent ce décor idéal pour les amateurs de sport et d’adrénaline.",
+            "Du légendaire Grand Prix de Monaco aux défis de l’Ironman, en passant par le Marathon des Alpes-Maritimes, la région vibre au rythme des grands événements sportifs. Cyclilge sur la Route des Crêtes, golf sur des parcours prestigieux et voile lors des Régates de Saint-Tropez complètent ce décor idéal pour les amateurs de sport et d’adrénaline.",
         toSeeTextLink:
             "Grand prix de Monaco, Ironman France - Nice, Marathon des Alpes-Maritimes, Régates de Saint-Tropez",
         toSeeLink: "#",
@@ -44,7 +44,7 @@ export const activities: Activity[] = [
         name: "Des expériences inoubliables en famille",
         description:
             "Entre villages pittoresques, marchés publics animés et escapades sur la route du littoral, Saint-Raphaël propose un cadre idéal pour partager des moments inoubliables. La diversité des activités en plein air fait de la région une destination prisée par les amateurs de découvertes et d’aventures en famille.",
-        className: "xl:col-span-2 xl:row-span-5 xl:col-start-3 xl:row-start-4 max-xl:h-[335px]",
+        className: "xl:col-span-2 xl:row-span-5 xl:col-start-3 xl:row-start-4 max-xl:h-[335px] md:py-[82px] lg:py-[120px]",
     },
     {
         backgroundCardImage: "/cap-dramont.webp",
@@ -55,6 +55,6 @@ export const activities: Activity[] = [
         toSeeLink: "#",
         buttonText: "Consulter la liste des sentiers pédestres",
         buttonLink: "#",
-        className: "xl:col-span-2 xl:row-span-5 xl:col-start-5 xl:row-start-4 max-xl:h-[335px]",
+        className: "xl:col-span-2 xl:row-span-5 xl:col-start-5 xl:row-start-4 max-xl:h-[335px] lg:py-[55px]",
     },
 ];
