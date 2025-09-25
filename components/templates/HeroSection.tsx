@@ -8,6 +8,7 @@ import { SocialSidebar } from "../molecules/SocialSidebar";
 import { useEffect, useState } from "react";
 import { useCarousel } from "@/hooks/useCarousel";
 import { useMobile } from "@/hooks/useMobile";
+import { ArrowButton } from "../atoms/ArrowButton";
 
 export function HeroSection() {
     const images = [
@@ -102,22 +103,10 @@ export function HeroSection() {
                             className="w-full h-full object-cover transition-transform duration-500"
                         />
 
-                        {/* Bouton fleche */}
-                        <button
+                        <ArrowButton
                             onClick={handleNext}
-                            disabled={isTransitioning}
-                            className={`absolute top-1/2 right-2 -translate-y-1/2 z-10
-                            bg-white/90 backdrop-blur-sm text-black p-2 rounded-full shadow-lg
-                            transition-all duration-300 ease-out
-                            hover:bg-white hover:scale-110 hover:shadow-xl
-                            active:scale-95
-                            disabled:opacity-50 disabled:cursor-not-allowed
-                            md:hidden
-                            ${isTransitioning ? "animate-pulse" : "hover:animate-bounce"}
-                            `}
-                        >
-                            <ChevronRight size={20} />
-                        </button>
+                            isTransitioning={isTransitioning}
+                        />
                     </div>
                 </div>
 
@@ -150,22 +139,10 @@ export function HeroSection() {
                             }
                         `} />
 
-                        {/* Bouton flèche */}
-                        <button
+                        <ArrowButton
                             onClick={handleNext}
-                            disabled={isTransitioning}
-                            className={`absolute top-1/2 right-2 -translate-y-1/2 z-10
-                                bg-white/90 backdrop-blur-sm text-black p-2 rounded-full shadow-lg
-                                transition-all duration-300 ease-out
-                                hover:bg-white hover:scale-110 hover:shadow-xl
-                                active:scale-95
-                                disabled:opacity-50 disabled:cursor-not-allowed
-                                max-md:hidden
-                                ${isTransitioning ? "animate-pulse" : "hover:animate-bounce"}
-                            `}
-                        >
-                            <ChevronRight size={20} />
-                        </button>
+                            isTransitioning={isTransitioning}
+                        />
                     </div>
                 </div>)}
             </div>

@@ -4,7 +4,7 @@ import Image from "next/image"
 import { BulletListItem } from "../atoms/BulletListItem"
 import { useEffect, useState } from "react";
 import { useCarousel } from "@/hooks/useCarousel";
-import { ChevronRight } from "lucide-react";
+import { ArrowButton } from "../atoms/ArrowButton";
 
 export function ApartmemtSection() {
     const apartments = [
@@ -113,26 +113,10 @@ export function ApartmemtSection() {
                             className="w-full h-full object-cover rounded-2xl transition-transform duration-500 shrink-0"
                         />
 
-                        <button
+                        <ArrowButton
                             onClick={handleNext}
-                            disabled={isTransitioning}
-                            className={`
-                                absolute top-1/2 right-2 -translate-y-1/2 z-10
-                                bg-white/90 backdrop-blur-sm text-black p-2 rounded-full shadow-lg
-                                transition-all duration-300 ease-out
-                                hover:bg-white hover:scale-110 hover:shadow-xl
-                                active:scale-95
-                                disabled:opacity-50 disabled:cursor-not-allowed
-                                ${isTransitioning ? "animate-pulse" : "hover:animate-bounce"}
-                                sm:hidden
-                            `}
-                        >
-                            <ChevronRight
-                                size={24}
-                                className={`transition-transform duration-300 ${isTransitioning ? "rotate-180" : "hover:translate-x-1"
-                                    }`}
-                            />
-                        </button>
+                            isTransitioning={isTransitioning}
+                        />
 
                         {/* Indicateur de progression */}
                         <div className="absolute bottom-4 left-4 flex gap-2">
@@ -178,26 +162,10 @@ export function ApartmemtSection() {
                             }
                         `}></div>
 
-                        {/* Arrow Button avec animations améliorées */}
-                        <button
+                        <ArrowButton
                             onClick={handleNext}
-                            disabled={isTransitioning}
-                            className={`
-                                absolute top-1/2 right-2 -translate-y-1/2 z-10
-                                bg-white/90 backdrop-blur-sm text-black p-2 rounded-full shadow-lg
-                                transition-all duration-300 ease-out
-                                hover:bg-white hover:scale-110 hover:shadow-xl
-                                active:scale-95
-                                disabled:opacity-50 disabled:cursor-not-allowed
-                                ${isTransitioning ? "animate-pulse" : "hover:animate-bounce"}
-                            `}
-                        >
-                            <ChevronRight
-                                size={24}
-                                className={`transition-transform duration-300 ${isTransitioning ? "rotate-180" : "hover:translate-x-1"
-                                    }`}
-                            />
-                        </button>
+                            isTransitioning={isTransitioning}
+                        />
 
                         {/* Loading indicator pendant la transition */}
                         {isTransitioning && (
