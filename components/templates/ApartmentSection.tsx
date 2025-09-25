@@ -66,11 +66,11 @@ export function ApartmemtSection() {
     return (
         <div className="relative bg-white py-12 min-h-screen flex items-center">
             {/* wrapper */}
-            <div className="ml-[25px] md:ml-[90px] lg:ml-[188px] flex flex-col lg:flex-row max-lg:gap-y-10 items-center justify-between">
+            <div className="ml-[15px] md:ml-[90px] lg:ml-[188px] flex flex-col lg:flex-row max-lg:gap-y-10 items-center justify-between">
                 {/* description */}
                 <div className="max-w-full lg:max-w-[555px] text-justify lg:text-left">
                     <h2 className="font-normal text-[#121212]">
-                        Le confort et la sérénité d'un <br />
+                        Le confort et la sérénité d&apos;un <br />
                         <span className="font-bold">appartement privé</span>
                     </h2>
                     <p className="text-[##020202] text-sm my-4 font-normal">
@@ -92,7 +92,7 @@ export function ApartmemtSection() {
 
                 {/* Animated hero images */}
                 <div
-                    className="relative lg:absolute lg:right-0 flex flex-col md:flex-row items-center gap-[10px] overflow-hidden rounded-2xl"
+                    className="relative xl:absolute xl:right-0 flex flex-col md:flex-row items-center gap-[10px] overflow-hidden rounded-2xl"
                     onMouseEnter={() => setIsPaused(true)}
                     onMouseLeave={() => setIsPaused(false)}
                 >
@@ -110,8 +110,29 @@ export function ApartmemtSection() {
                             alt={currentItem.alt}
                             width={421}
                             height={538}
-                            className="w-full h-full object-cover rounded-2xl transition-transform duration-500"
+                            className="w-full h-full object-cover rounded-2xl transition-transform duration-500 shrink-0"
                         />
+
+                        <button
+                            onClick={handleNext}
+                            disabled={isTransitioning}
+                            className={`
+                                absolute top-1/2 right-2 -translate-y-1/2 z-10
+                                bg-white/90 backdrop-blur-sm text-black p-2 rounded-full shadow-lg
+                                transition-all duration-300 ease-out
+                                hover:bg-white hover:scale-110 hover:shadow-xl
+                                active:scale-95
+                                disabled:opacity-50 disabled:cursor-not-allowed
+                                ${isTransitioning ? "animate-pulse" : "hover:animate-bounce"}
+                                sm:hidden
+                            `}
+                        >
+                            <ChevronRight
+                                size={24}
+                                className={`transition-transform duration-300 ${isTransitioning ? "rotate-180" : "hover:translate-x-1"
+                                    }`}
+                            />
+                        </button>
 
                         {/* Indicateur de progression */}
                         <div className="absolute bottom-4 left-4 flex gap-2">
@@ -131,6 +152,9 @@ export function ApartmemtSection() {
                     <div className={`
                         relative w-full max-w-[200px] h-[431px] overflow-hidden rounded-tl-2xl rounded-bl-2xl
                         transition-all duration-500 ease-in-out transform-gpu
+                        blur-[1px]
+                        sm:block hidden
+
                         ${isTransitioning
                             ? "translate-x-1 scale-105 opacity-90"
                             : "translate-x-0 scale-100 opacity-100"
