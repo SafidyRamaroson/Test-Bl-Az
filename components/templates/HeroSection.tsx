@@ -54,7 +54,9 @@ export function HeroSection() {
             <SocialSidebar />
 
             {/* Content */}
-            <div className="relative w-11/12 lg:w-3/4 mx-auto z-10 flex justify-start">
+
+
+            <div className="relative w-11/12 lg:w-3/4 mx-auto z-10 flex flex-col justify-center items-start min-h-screen">
                 <HeroText />
             </div>
 
