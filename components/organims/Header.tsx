@@ -1,12 +1,12 @@
 'use client'
 
-import Link from "next/link";
 import { BluAzurLogo } from "../atoms/BluAzurLogo";
-import { Button } from "../ui/button";
 import { MenuDrawer } from "./MobileMenu";
 import { useScrolled } from "@/hooks/useScrolled";
 import { cn } from "@/lib/utils";
 import { useMobile } from "@/hooks/useMobile";
+import { NavMenu } from "../molecules/NavMenu";
+import { SocialSidebar } from "../molecules/SocialSidebar";
 
 export function Header() {
     const scrolled = useScrolled();
@@ -18,28 +18,11 @@ export function Header() {
                 <BluAzurLogo className="w-[109px] h-[48px]" />
 
                 {/* Menu */}
-                {isMobile ? <MenuDrawer /> : (<ul className="text-primary-foreground flex flex-row items-center space-x-8">
-                    <li>
-                        <Link href="/" className="font-bold hover:text-primary-foreground">
-                            Accueil
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/" className="font-bold hover:text-primary-foreground">
-                            Localisation
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/" className="font-bold hover:text-primary-foreground">
-                            Activités
-                        </Link>
-                    </li>
-                    <li>
-                        <Button className="rounded-full cursor-pointer opacity-100 text-primary-foreground">
-                            Réserver
-                        </Button>
-                    </li>
-                </ul>)}
+                {isMobile ? (<div className="flex flex-row items-center gap-4">
+                    <SocialSidebar className="md:hidden relative flex flex-row items-center gap-3 bg-transparent w-fit h-fit pb-0" />
+                    <MenuDrawer />
+                </div>
+                ) : <NavMenu />}
             </div>
         </header>
     );
