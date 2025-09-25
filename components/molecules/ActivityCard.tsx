@@ -46,9 +46,9 @@ export function ActivityCard({
 
             {buttonText && (
                 <Link href={buttonLink ?? "#"} className="mt-[26px] inline-block">
-                    <Button className="bg-transparent border border-primary py-2 px-4 rounded-2xl text-[10px] font-bold text-wrap">
+                    <Button className="bg-transparent border border-primary py-2 px-4 rounded-2xl text-[10px] font-bold text-wrap group">
                         {buttonText}
-                        <CircleArrowRight className="text-primary size-4 ml-2" />
+                        <CircleArrowRight className="text-primary size-4 ml-2 group-hover:text-primary-foreground" />
                     </Button>
                 </Link>
             )}
