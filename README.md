@@ -66,7 +66,7 @@ src/
 
 ### 1. Cloner le dépôt
 ```bash
-git clone https://github.com/SafidyRamaroson/blu-azur.git
+git clone https://github.com/SafidyRamaroson/Test-Bl-Az.git
 cd blu-azur
 ```
 
