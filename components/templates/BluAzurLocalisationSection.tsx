@@ -18,9 +18,9 @@ export function BluAzurLocalisationSection() {
                         href='https://drive.google.com/file/d/1O197wWlKcDOsHp3eKCsa6918SI6N0H6X/view?usp=drive_link'
                         target='_blank'
                     >
-                        <Button size='lg' className="border border-primary text-primary hover:text-primary-foreground hover:border-primary-foreground cursor-pointer bg-white/80 rounded-full">
+                        <Button size='lg' className="border border-primary text-primary hover:text-primary-foreground hover:border-primary-foreground cursor-pointer bg-white/80 rounded-full px-3 py-6 group">
                             Télécharger le PDF &quot;Comment s&apos;y rendre ?&quot;
-                            <CircleArrowRight className="text-primary size-4 ml-2" />
+                            <CircleArrowRight className="text-primary size-4 ml-8 group-hover:text-primary-foreground" />
                         </Button>
                     </Link>
                 </div>
