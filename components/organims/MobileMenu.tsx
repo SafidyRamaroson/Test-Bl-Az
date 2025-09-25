@@ -73,7 +73,7 @@ export function MenuDrawer() {
                             href="#reserve"
                         >
                             <Button variant="secondary" className="w-full rounded-full p-2">
-                                Réservé
+                                Réservér
                             </Button>
                         </Link>
                     </div>
