@@ -10,7 +10,7 @@ export function NavMenu({ className }: NavMenuProps) {
     return (
         <ul
             className={cn(
-                "text-primary-foreground flex flex-row items-center space-x-8",
+                "text-primary-foreground flex flex-row items-center space-x-9",
                 className
             )}
         >
