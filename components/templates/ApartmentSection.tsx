@@ -130,7 +130,7 @@ export function ApartmemtSection() {
                             absolute inset-0 z-0 transition-all duration-500
                             ${isTransitioning
                                 ? "bg-gradient-to-l from-black/30 to-black/50"
-                                : "bg-gradient-to-l from-black/10 to-black/30"
+                                : "bg-gradient-to-l from-black/30 to-black/70"
                             }
                         `}></div>
 
