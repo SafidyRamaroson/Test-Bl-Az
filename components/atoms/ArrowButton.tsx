@@ -19,7 +19,6 @@ export function ArrowButton({ onClick, isTransitioning = false, className }: Arr
         transition-all duration-300 ease-out
         active:scale-95
         disabled:opacity-50 disabled:cursor-not-allowed
-        max-md:hidden
         cursor-pointer
         ${isTransitioning ? "animate-pulse" : "hover:animate-bounce"}
         ${className}
