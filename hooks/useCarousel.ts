@@ -1,21 +1,46 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 
-export function useCarousel<T>(items: T[]) {
+export function useCarousel<T>(items: T[], autoPlayDelay = 5000, transitionDuration = 400) {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [isTransitioning, setIsTransitioning] = useState(false);
+    const [isPaused, setIsPaused] = useState(false);
 
-    const next = () => {
+    const next = useCallback(() => {
         setCurrentIndex((prev) => (prev + 1) % items.length);
-    };
+    }, [items.length]);
 
-    const prev = () => {
+    const prev = useCallback(() => {
         setCurrentIndex((prev) => (prev - 1 + items.length) % items.length);
-    };
+    }, [items.length]);
 
-    const goTo = (index: number) => {
+    const goTo = useCallback((index: number) => {
         if (index >= 0 && index < items.length) {
             setCurrentIndex(index);
         }
-    };
+    }, [items.length]);
+
+    const handleNext = useCallback(() => {
+        if (isTransitioning) return;
+        setIsTransitioning(true);
+
+        setTimeout(() => {
+            next();
+            setIsTransitioning(false);
+        }, transitionDuration);
+    }, [isTransitioning, next, transitionDuration]);
+
+    // Auto-play avec pause au hover
+    useEffect(() => {
+        if (isPaused) return;
+
+        const interval = setInterval(() => {
+            if (!isTransitioning) {
+                handleNext();
+            }
+        }, autoPlayDelay);
+
+        return () => clearInterval(interval);
+    }, [isPaused, isTransitioning, handleNext, autoPlayDelay]);
 
     const nextIndex = (currentIndex + 1) % items.length;
     const nextItem = items[nextIndex];
@@ -24,8 +49,11 @@ export function useCarousel<T>(items: T[]) {
         currentIndex,
         currentItem: items[currentIndex],
         nextItem,
-        next,
+        next: handleNext,
         prev,
         goTo,
+        isTransitioning,
+        isPaused,
+        setIsPaused
     };
 }

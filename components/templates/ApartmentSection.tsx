@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import { BulletListItem } from "../atoms/BulletListItem"
-import { useEffect, useState } from "react";
 import { useCarousel } from "@/hooks/useCarousel";
 import { ArrowButton } from "../atoms/ArrowButton";
 
@@ -34,34 +33,7 @@ export function ApartmemtSection() {
         }
     ]
 
-    const { currentItem, nextItem, next } = useCarousel(apartments);
-    const [isTransitioning, setIsTransitioning] = useState(false);
-    const [isPaused, setIsPaused] = useState(false);
-
-    const handleNext = () => {
-        if (isTransitioning) return; // Évite les clics multiples
-
-        setIsTransitioning(true);
-
-        // Délai plus fluide pour la transition
-        setTimeout(() => {
-            next();
-            setIsTransitioning(false);
-        }, 400);
-    };
-
-    // Auto-play avec pause au hover
-    useEffect(() => {
-        if (isPaused) return;
-
-        const interval = setInterval(() => {
-            if (!isTransitioning) {
-                handleNext();
-            }
-        }, 5000);
-
-        return () => clearInterval(interval);
-    }, [isPaused, isTransitioning]);
+    const { currentItem, nextItem, isTransitioning, setIsPaused, next } = useCarousel(apartments);
 
     return (
         <section id="apartments" className="relative bg-white py-12 min-h-screen flex items-center">
@@ -114,7 +86,7 @@ export function ApartmemtSection() {
                         />
 
                         <ArrowButton
-                            onClick={handleNext}
+                            onClick={next}
                             isTransitioning={isTransitioning}
                         />
 
@@ -163,7 +135,7 @@ export function ApartmemtSection() {
                         `}></div>
 
                         <ArrowButton
-                            onClick={handleNext}
+                            onClick={next}
                             isTransitioning={isTransitioning}
                         />
 
