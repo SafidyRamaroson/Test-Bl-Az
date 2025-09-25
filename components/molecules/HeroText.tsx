@@ -16,7 +16,7 @@ export function HeroText() {
                 target="_blank"
                 className="inline-block"
             >
-                <Button className="px-12 py-6 flex flex-row items-center justify-between rounded-full bg-transparent w-[430px] mt-16 border-2 border-primary-foreground text-primary-foreground hover:bg-primary hover:text-primary-foreground cursor-pointer gap-2">
+                <Button className="px-12 py-6 flex flex-row items-center justify-between rounded-full bg-transparent md:w-[430px] mt-16 border-2 border-primary-foreground text-primary-foreground hover:bg-primary hover:text-primary-foreground cursor-pointer gap-2">
                     <span className="whitespace-normal break-words text-center ml-4">
                         Réservez dès maintenant votre séjour !
                     </span>
