@@ -38,7 +38,7 @@ export function ApartmemtSection() {
     return (
         <section id="apartments" className="relative bg-white py-12 min-h-screen flex items-center">
             {/* wrapper */}
-            <div className="ml-[15px] md:ml-[90px] lg:ml-[188px] flex flex-col lg:flex-row max-lg:gap-y-10 items-center justify-between">
+            <div className="mx-[15px] md:ml-[90px] lg:ml-[188px] flex flex-col lg:flex-row max-lg:gap-y-10 items-center justify-between">
                 {/* description */}
                 <div className="max-w-full lg:max-w-[555px] text-justify lg:text-left">
                     <h2 className="font-normal text-[#121212]">
@@ -73,7 +73,7 @@ export function ApartmemtSection() {
                         relative w-full max-w-[421px] h-auto md:h-[538px] rounded-2xl overflow-hidden
                         transition-all duration-500 ease-in-out
                         ${isTransitioning
-                            ? "transform -translate-x-2 scale-95 opacity-80 blur-[1px]"
+                            ? "transform -translate-x-2 scale-95 opacity-80"
                             : "transform translate-x-0 scale-100 opacity-100 blur-0"
                         }
                     `}>
@@ -109,7 +109,7 @@ export function ApartmemtSection() {
                     <div className={`
                         relative w-full max-w-[200px] h-[431px] overflow-hidden rounded-tl-2xl rounded-bl-2xl
                         transition-all duration-500 ease-in-out transform-gpu
-                        sm:block hidden
+                        md:block hidden
                         ${isTransitioning
                             ? "translate-x-1 scale-105 opacity-90"
                             : "translate-x-0 scale-100 opacity-100"

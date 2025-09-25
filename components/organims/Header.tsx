@@ -21,7 +21,7 @@ export function Header() {
             <div
                 className={cn(
                     "w-11/12 lg:w-3/4 mx-auto border-b pb-4 border-white flex flex-row justify-between items-end transition-all duration-300 ease-in-out ",
-                    isMobile && "w-4/5"
+                    // isMobile && "w-11/12"
                 )}
             >
                 {/* Logo */}
