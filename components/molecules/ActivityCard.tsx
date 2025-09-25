@@ -30,7 +30,7 @@ export function ActivityCard({
         >
             {/* card header */}
             <div>
-                <h3 className="text-[16px] font-bold">{name}</h3>
+                <h3 className="text-[17x] font-bold whitespace-pre-line">{name}</h3>
                 <p className="text-xs font-normal text-justify mt-4">{description}</p>
             </div>
 

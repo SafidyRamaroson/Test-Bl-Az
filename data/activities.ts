@@ -12,13 +12,13 @@ type Activity = {
 export const activities: Activity[] = [
     {
         backgroundCardImage: "/saint-pool-de-vence.avif",
-        name: "Un patrimoine culturel d’exception",
+        name: "Un patrimoine culturel \n d’exception",
         description:
             "De Picasso à Cocteau, la Côte d’Azur a toujours été une terre d’inspiration pour les artistes. Musées, galeries et sites historiques jalonnent la région, offrant un voyage au cœur de l’art et de l’histoire entre Saint-Raphaël, Antibes et Saint-Paul-de-Vence.",
         toSeeTextLink:
             "Le Festival de Cannes, Carnaval de Nice, Fête du Citron",
         toSeeLink: "#",
-        className: "xl:col-span-3 xl:row-span-3 xl:h-[280px] max-xl:h-[335px] md:py-[82px] lg:py-[65px]",
+        className: "xl:col-span-3 xl:row-span-3 xl:h-[280px] max-xl:h-[335px] md:py-[82px] lg:py-[36px]",
     },
     {
         backgroundCardImage: "/sport-mediterranee.avif",
@@ -32,7 +32,7 @@ export const activities: Activity[] = [
     },
     {
         backgroundCardImage: "/destination-gourmande-et-authentique.avif",
-        name: "Une destination gourmande et authentique",
+        name: "Une destination \n gourmande et authentique",
         description:
             "Les marchés provençaux dévoilent des saveurs du terroir, entre fromages affinés, huile d’olive et spécialités méditerranéennes. Vignerons passionnés et restaurants raffinés offrent une expérience gastronomique où tradition et créativité se rencontrent dans un cadre enchanteur.",
         buttonText: "Consulter la liste des meilleurs restaurants",
@@ -41,10 +41,10 @@ export const activities: Activity[] = [
     },
     {
         backgroundCardImage: "/port-grimaud-cite-lacustre.avif",
-        name: "Des expériences inoubliables en famille",
+        name: "Des expériences \n inoubliables en famille",
         description:
             "Entre villages pittoresques, marchés publics animés et escapades sur la route du littoral, Saint-Raphaël propose un cadre idéal pour partager des moments inoubliables. La diversité des activités en plein air fait de la région une destination prisée par les amateurs de découvertes et d’aventures en famille.",
-        className: "xl:col-span-2 xl:row-span-5 xl:col-start-3 xl:row-start-4 max-xl:h-[335px] md:py-[82px] lg:py-[120px]",
+        className: "xl:col-span-2 xl:row-span-5 xl:col-start-3 xl:row-start-4 max-xl:h-[335px] md:py-[82px] lg:py-[97px]",
     },
     {
         backgroundCardImage: "/cap-dramont.webp",
