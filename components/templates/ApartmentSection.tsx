@@ -88,6 +88,7 @@ export function ApartmemtSection() {
                         <ArrowButton
                             onClick={next}
                             isTransitioning={isTransitioning}
+                            className="block md:hidden"
                         />
 
                         {/* Indicateur de progression */}
@@ -108,9 +109,7 @@ export function ApartmemtSection() {
                     <div className={`
                         relative w-full max-w-[200px] h-[431px] overflow-hidden rounded-tl-2xl rounded-bl-2xl
                         transition-all duration-500 ease-in-out transform-gpu
-                        blur-[1px]
                         sm:block hidden
-
                         ${isTransitioning
                             ? "translate-x-1 scale-105 opacity-90"
                             : "translate-x-0 scale-100 opacity-100"
@@ -137,6 +136,7 @@ export function ApartmemtSection() {
                         <ArrowButton
                             onClick={next}
                             isTransitioning={isTransitioning}
+                            className="hidden md:block right-12"
                         />
 
                         {/* Loading indicator pendant la transition */}

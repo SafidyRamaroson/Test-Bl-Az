@@ -31,7 +31,7 @@ export function HeroImage({ image, nextImage, isTransitioning, onNext, showSecon
                         height={468}
                         className="w-full h-full object-cover transition-transform duration-500"
                     />
-                    <ArrowButton onClick={onNext} isTransitioning={isTransitioning} />
+                    <ArrowButton onClick={onNext} isTransitioning={isTransitioning} className="block md:hidden" />
                 </div>
             </div>
 
@@ -49,7 +49,7 @@ export function HeroImage({ image, nextImage, isTransitioning, onNext, showSecon
                         <div className={`absolute inset-0 z-0 transition-all duration-500
               ${isTransitioning ? "bg-gradient-to-l from-black/30 to-black/50" : "bg-gradient-to-l from-black/30 to-black/70"}`}
                         />
-                        <ArrowButton onClick={onNext} isTransitioning={isTransitioning} />
+                        <ArrowButton onClick={onNext} isTransitioning={isTransitioning} className="hidden md:block right-24" />
                     </div>
                 </div>
             )}
