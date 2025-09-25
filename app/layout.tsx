@@ -11,6 +11,7 @@ const mulish = Mulish({
 export const metadata: Metadata = {
   title: "Accueil | Blu d\'azur",
   description: "Blu Azur vous invite à découvrir le charme de Saint-Raphaël, une destination d’exception nichée entre Cannes et Saint-Tropez. Nos appartements tout équipés, situés dans un domaine privé sécurisé, offrent un cadre verdoyant et paisible, à quelques pas de la marina de Santa Lucia, des plages de sable fin et du centre-ville animé. Profitez d’un séjour alliant confort, sérénité et élégance au cœur de la Riviera française !",
+  icons: { icon: '/favicon.png', shortcut: '/favicon.png' },
 };
 
 export default function RootLayout({
