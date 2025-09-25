@@ -19,7 +19,7 @@ export function MenuDrawer() {
     return (
         <Drawer direction="right">
             <DrawerTrigger asChild>
-                <button>
+                <button aria-label='menu-bouton'>
                     <Menu className='text-white w-6 h-6' />
                 </button>
             </DrawerTrigger>
