@@ -10,21 +10,21 @@ export function NavMenu({ className }: NavMenuProps) {
     return (
         <ul
             className={cn(
-                "text-primary-foreground flex flex-row items-center space-x-9",
+                "text-primary-foreground flex flex-row items-center space-x-9 -mb-4",
                 className
             )}
         >
-            <li>
+            <li className="nav-link">
                 <Link href="#apartments" className="font-bold hover:text-primary-foreground">
                     Accueil
                 </Link>
             </li>
-            <li>
+            <li className="nav-link">
                 <Link href="#localisation" className="font-bold hover:text-primary-foreground">
                     Localisation
                 </Link>
             </li>
-            <li>
+            <li className="nav-link">
                 <Link href="#activities" className="font-bold hover:text-primary-foreground">
                     Activités
                 </Link>
